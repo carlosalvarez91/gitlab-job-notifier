@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gitlab Job Notifier</title>
+    <style>
+      body {
+        width: 330px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1f1e24;
+      }
+      #notify-button{
+        background-color: #333238;
+        cursor: pointer;
+        border-width: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        background-color: transparent;
+        line-height: 1rem;
+        color: #ececef;
+        fill: currentColor;
+        box-shadow: inset 0 0 0 1px #535158;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.875rem;
+        border-radius: 0.25rem;
+        font-weight: 400;
+        border-color: #434248;
+        white-space: nowrap;
+        transition: background-color 100ms linear, border-color 100ms linear, color 100ms linear, box-shadow 100ms linear;
+      }
+      #info {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="notify-button">Notify me when the current job finishes</button>
+    <p id="info"></p>
+    <script src="popup.js"></script>
+  </body>
+</html>
